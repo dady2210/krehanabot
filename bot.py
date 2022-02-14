@@ -93,7 +93,7 @@ def process_name_step(message):
     file="./"+num1+".txt"
     filezip="./"+num1+"-files.txt"
     bot.send_message(chat_id, "Te estamos enviando el curso: "+curstitle)
-    bot.send_document(chat_id, document=open(file, 'rb'))
+    bot.send_document(chat_id, document=open(file, 'rb'),caption="Esto es de Prueba")
     bot.send_message(chat_id, "Te estamos enviando los descargables")
     bot.send_document(chat_id, document=open(filezip, 'rb'))
     os.remove(num1+"-wtemp.txt")
