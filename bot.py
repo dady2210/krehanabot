@@ -21,7 +21,6 @@ bot = TeleBot(TOKEN)
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['privkey', 'start'])
 def send_usuario(message):
-    if 
     user_id = str(message.from_user.id)
     user_first_name = str(message.chat.first_name) 
     msg = bot.reply_to(message, f"Hey! {user_first_name} tu id es : {user_id} \n Ingresa ID del curso")
