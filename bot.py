@@ -95,7 +95,7 @@ def process_name_step(message):
     bot.send_message(chat_id, "Te estamos enviando el curso: "+curstitle)
     bot.send_document(chat_id, document=open(file, 'rb'),caption="Enlaces a videos directos")
     bot.send_message(chat_id, "Te estamos enviando los descargables")
-    bot.send_document(chat_id, document=open(filezip, 'rb'),caption="Enlace directos a archivos")
+    bot.send_document(chat_id, document=open(filezip, 'rb'),caption="Enlaces directos a archivos")
     os.remove(num1+"-wtemp.txt")
     os.remove(num1+"-files.txt")
     os.remove(num1+".txt")
